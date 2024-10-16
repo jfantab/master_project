@@ -7,8 +7,8 @@ import gzip
 import json 
 
 # replace your email and password in https://www.nuscenes.org/
-useremail = "johnlu1161@gmail.com"
-password = "fudge!Bamboo123"
+useremail = "<EMAIL>"
+password = "<PASSWORD>"
 
 output_dir = "data/nuscenes_full/"
 region = 'us' # 'us' or 'asia'
