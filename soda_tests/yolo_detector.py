@@ -33,15 +33,15 @@ class ObjectDetectorYOLO(ObjectDetector):
             results.append(result)
         return results
     
-    def draw_pred_bboxes(self, results, test_image_path):
+    def draw_pred_bboxes(self, result, test_image_path):
         im = Image.open(test_image_path)
         np_im = np.array(im)
         
-        for box in results[0].boxes:
+        for box in result[0].boxes:
             print(box.xyxy.tolist()[0])
             x1, y1, x2, y2 = map(int, box.xyxy.tolist()[0])
             class_id = int(box.cls)
-            class_name = results[0].names[class_id]
+            class_name = result[0].names[class_id]
             confidence = box.conf.item()
                 
             # Draw rectangle and label on the frame
