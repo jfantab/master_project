@@ -13,6 +13,8 @@ The link to the nuScenes dataset is [here](https://www.nuscenes.org/nuscenes).
 
 The mini-Waymo dataset can be downloaded from [here](https://download.openmmlab.com/mmdetection3d/data/waymo_mmdet3d_after_1x4/waymo_mini.tar.gz).
 
+The Soda10M dataset can be downloaded [here](https://soda-2d.github.io/download.html).
+
 I downloaded the PointPillars checkpoints and weights from the [mmDetection3D repository](https://github.com/open-mmlab/mmdetection3d).
 
 Cloned repositories at the top level of the repository:
