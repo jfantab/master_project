@@ -109,8 +109,11 @@ def main():
             new_dict = [{"pred_boxes": pred_boxes2,
                         "pred_scores": pred_scores2,
                         "pred_labels": pred_labels2}]
+            
+            model_name = cfg.MODEL["NAME"]
+            idx = args.data_path.split('/')[-1].split('.')[0]
 
-            with open("demo_pred_dicts.pkl", "wb") as fp:
+            with open(f"demo_pred_dicts_{model_name}_{idx}.pkl", "wb") as fp:
                 pickle.dump(new_dict, fp)
 
             # V.draw_scenes(
